@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Artist" msprop:Generator_RowEvHandlerName="ArtistRowChangeEventHandler" msprop:Generator_RowDeletedName="ArtistRowDeleted" msprop:Generator_RowDeletingName="ArtistRowDeleting" msprop:Generator_RowEvArgName="ArtistRowChangeEvent" msprop:Generator_TablePropName="Artist" msprop:Generator_RowChangedName="ArtistRowChanged" msprop:Generator_RowChangingName="ArtistRowChanging" msprop:Generator_TableClassName="ArtistDataTable" msprop:Generator_RowClassName="ArtistRow" msprop:Generator_TableVarName="tableArtist" msprop:Generator_UserTableName="Artist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArtistID" msprop:Generator_ColumnPropNameInRow="ArtistID" msprop:Generator_ColumnPropNameInTable="ArtistIDColumn" msprop:Generator_ColumnVarNameInTable="columnArtistID" msprop:Generator_UserColumnName="ArtistID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtistName" msprop:Generator_ColumnPropNameInRow="ArtistName" msprop:Generator_ColumnPropNameInTable="ArtistNameColumn" msprop:Generator_ColumnVarNameInTable="columnArtistName" msprop:Generator_UserColumnName="ArtistName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Artist" />
+      <xs:field xpath="mstns:ArtistID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
